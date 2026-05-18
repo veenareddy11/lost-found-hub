@@ -76,7 +76,7 @@ function Home() {
 
   return (
 
-    <div className="min-h-screen overflow-hidden text-white bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#312e81]">
+    <div className="min-h-screen overflow-hidden text-white bg-linear-to-br from-[#0f172a] via-[#1e1b4b] to-[#312e81]">
 
       {/* HERO SECTION */}
 
@@ -104,7 +104,7 @@ function Home() {
 
             <br />
 
-            <span className="bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-300 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-pink-400 via-orange-300 to-yellow-300 bg-clip-text text-transparent">
               Find It Here
             </span>
 
@@ -183,7 +183,7 @@ function Home() {
 
               Search for{" "}
 
-              <span className="bg-gradient-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-pink-400 to-orange-300 bg-clip-text text-transparent">
                 lost items
               </span>
 
@@ -268,7 +268,7 @@ function Home() {
 
                     <button
                       onClick={() => handleClaim(item._id)}
-                      className="w-full bg-gradient-to-r from-pink-500 to-orange-400 py-3 rounded-2xl font-bold hover:scale-105 transition"
+                      className="w-full bg-linear-to-r from-pink-500 to-orange-400 py-3 rounded-2xl font-bold hover:scale-105 transition"
                     >
                       Claim Item
                     </button>
@@ -277,7 +277,7 @@ function Home() {
 
                     <button
                       onClick={() => handleClaim(item._id)}
-                      className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 py-3 rounded-2xl font-bold hover:scale-105 transition"
+                      className="w-full bg-linear-to-r from-yellow-500 to-orange-500 py-3 rounded-2xl font-bold hover:scale-105 transition"
                     >
                       Undo Claim
                     </button>
