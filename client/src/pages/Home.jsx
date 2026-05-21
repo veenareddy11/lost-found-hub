@@ -21,7 +21,7 @@ function Home() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/items"
+        'https://lost-found-hub-1.onrender.com/api/items'
       );
 
       setItems(response.data);
@@ -47,7 +47,7 @@ function Home() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/items/claim/${id}`,
+        `https://lost-found-hub-1.onrender.com/api/items/claim/${id}`,
         {
           userId: user._id
         }

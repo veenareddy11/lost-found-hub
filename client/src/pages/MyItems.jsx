@@ -25,7 +25,7 @@ const [updatedDescription, setUpdatedDescription] = useState("");
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/items"
+        "https://lost-found-hub-1.onrender.com/api/items"
       );
 
       const myItems = response.data.filter(
@@ -47,7 +47,7 @@ const [updatedDescription, setUpdatedDescription] = useState("");
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/items/${id}`
+        `https://lost-found-hub-1.onrender.com/api/items/${id}`
       );
 
       fetchMyItems();
@@ -75,7 +75,7 @@ const handleUpdate = async () => {
   try {
 
     await axios.put(
-      `http://localhost:5000/api/items/${editingItem._id}`,
+      `https://lost-found-hub-1.onrender.com/api/items/${editingItem._id}`,
       {
         title: updatedTitle,
         description: updatedDescription
